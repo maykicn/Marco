@@ -25,6 +25,7 @@
    padding-bottom: 56.25%;
    padding-top: 25px;
    height: 0px;
+   
 
  }
 
@@ -38,12 +39,15 @@
 
  .footer-basic {
    position: fixed;
-   padding: 10px 10px 0px 10px;
+   left: 0;
+   bottom: 0;
+   text-align: center;
+   /*padding: 10px 10px 0px 10px;*/
    bottom: 0;
    width: 100%;
    /* Height of the footer*/ 
    height: 100px;
-   background-color:#1b1919;
+ 
    color:#4b4c4d;
    
  }
@@ -101,3 +105,11 @@
    color:#aaa;
    margin-bottom:0;
  }
+
+.row{
+   display: flex;
+}
+.column{
+   flex: 33.00%;
+   padding: 10px;
+}
