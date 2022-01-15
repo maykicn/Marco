@@ -13,6 +13,33 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
     />
     <link rel="stylesheet" href="/main.css" />
+    <style>
+    .form-row{
+      margin:35px;
+      position: relative;
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      
+
+    }
+    #name{
+      margin-right: 40px;
+    }
+    #storylabel{
+      margin-right: 20px;
+    }
+    #email{
+      margin-right: 45px;
+    }
+    #send{
+      
+      position: relative;
+      padding:20px 305px;
+      
+      
+    }
+    </style>
     <title>Contact - Web Portfolio of Marco</title>
   </head>
   <body style="background-color:bisque">
@@ -36,18 +63,44 @@
         </div>
       </div>
     </nav>
+
     <div class="container">
-      <h1 class="title">Contact</h1>
+      <h1 class="title">Contact Form</h1>
 
-      <p>
-        You can contact me by email:
-        <a href="mailto:spammails@gmx.ch">spammails@gmx.ch</a>
-      </p>
+      <div calss="form-horizontal">
 
-      <p>
-        Marco Jakob<br />
-        Switzerland
-      </p>
+        <div class="form-row">
+          <label for="email"id="email">Email :</label>
+
+            <input type="email" id="email"
+            size="30" required>
+
+        </div>
+
+        <div class="form-row">
+          <label for="name" id="name">Name :</label>
+
+          <input type="text" id="name" name="name" required
+                 minlength="4" maxlength="8" size="30">
+        </div>
+
+        <div class="form-row">
+          <label for="story" id="storylabel">Message :</label>
+
+          <textarea id="story" name="story"
+          rows="5" cols="33">
+          </textarea>
+        </div>
+
+       <div class="form-row" id="send">
+        <input type="submit" value="Send">
+       </div>
+
+
+      </div>
+      </div>
+      
+      
       <div class="footer-basic">
         <footer>
           <div class="social">
